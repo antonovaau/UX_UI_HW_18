@@ -1,0 +1,181 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: white;
+    font-weight: 700;
+    color: black;
+    font-size: 22px;
+    font-family: "hind";
+    overflow: hidden;
+}
+
+/* navbar section styling starts*/
+
+.navbar{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 55px;
+    font-family: "hind";
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+    
+}
+.primary-icon{
+    height: 165px;
+    padding-left: 30%;
+    
+
+}
+.nav-list{
+    list-style-type: none;
+    padding-right: 10%;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a{
+color: black;
+text-decoration: none;
+}
+
+.navbar a:hover{
+  color: rgb(226, 126, 126);
+}
+
+/*navbar section styling ends*/
+
+/*hero section styling starts*/
+
+.hero-section{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 55px;
+    font-family: "hind";
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+    
+    
+}
+
+.hero-section-img{
+width: 50%;
+display: inline-block;
+padding:0%;
+margin: 0%;
+
+}
+.hero-section-content{
+    width: 50%;
+    display: inline-block;
+    margin:5%;
+}
+
+
+.hero-section-content h1{
+    margin-block: 25px;
+    font-size: 68px;  
+}
+.hero-section-content h3{
+margin-top: 25px;
+font-size: 48px;
+color: black;
+}
+
+.hero-section-content p{
+    font-size: 35px;
+    color: darkslategray;
+}
+.hero-section-content hr{
+    width: 615px;
+    margin-left: 0px;
+}
+
+.hero-section-content .btn{
+    border: none;
+    outline-style: none;
+    padding: 20px 45px;
+    background: rgb(243, 200, 215);
+    border-radius: 15px;
+    font-size: 20px;
+    color: darkslategray;
+    cursor: pointer;
+    transition: transform .3s;
+
+}
+
+.hero-section-content .btn:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 25;
+    background: rgb(231, 127, 153);
+}
+
+/*hero section styling ends*/
+
+/*Footer section styling starts*/
+
+.containerGrid {
+  display: grid;
+   background-color: black;
+  color:white;
+  font-family: "hind";
+  padding-top: 50px;
+  font-variant-caps: all-petite-caps;
+  font-weight: bold;
+  font-size: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr;
+  grid-template-areas: 
+    "spacerA leftSidebar rightContent spacerB"
+    "copyright copyright copyright copyright"
+    ;
+}
+
+.containerGrid h1{
+    font-size: 68px;
+}
+
+.containerGrid a{
+    margin-top: 25px;
+    color: white;
+    text-decoration: none;
+    }
+
+.copyright {
+  grid-area: copyright;
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight:300;
+  text-align: center;
+}
+
+.leftSidebar {
+  grid-area: leftSidebar;
+}
+
+
+.rightContent {
+  grid-area: rightContent;
+}
+
+
+.social-icons{
+    height: 60px;
+    width: 60px;
+    color: white;
+}
+
+
+/*Footer section styling ends*
