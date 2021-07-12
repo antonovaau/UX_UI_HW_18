@@ -3,13 +3,21 @@
     padding: 0;
     margin: 0;
 }
+
 .body{
     background: white;
     font-weight: 700;
     color: black;
-    font-size: 22px;
     font-family: "hind";
     overflow: hidden;
+}
+
+h1{ 
+    margin-block: 25px;
+    font-size: 55px;
+    font-family: "hind";
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
 }
 
 /* navbar section styling starts*/
@@ -20,21 +28,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 55px;
+    font-size: 35px;
     font-family: "hind";
     font-variant-caps: all-petite-caps;
     font-weight: bold;
     
 }
 .primary-icon{
-    height: 165px;
+    height: 120px;
     padding-left: 30%;
     
 
 }
 .nav-list{
     list-style-type: none;
-    padding-right: 10%;
+    padding-right: 3%;
 }
 
 .nav-list .list-item{
@@ -43,12 +51,12 @@
 }
 
 .navbar a{
-color: black;
-text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 .navbar a:hover{
-  color: rgb(226, 126, 126);
+    color: rgb(206, 166, 152);
 }
 
 /*navbar section styling ends*/
@@ -56,49 +64,49 @@ text-decoration: none;
 /*hero section styling starts*/
 
 .hero-section{
-    background-color: white;
+    
+    background-color: rgb(236, 236, 236);
     color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 55px;
     font-family: "hind";
-    font-variant-caps: all-petite-caps;
-    font-weight: bold;
-    
-    
+    font-weight: bold;  
 }
 
 .hero-section-img{
-width: 50%;
-display: inline-block;
+
+display: flexbox;
 padding:0%;
 margin: 0%;
 
 }
 .hero-section-content{
-    width: 50%;
-    display: inline-block;
-    margin:5%;
+    width: 75%;
+    display: flexbox;
+    margin: 5%;
 }
 
 
 .hero-section-content h1{
     margin-block: 25px;
-    font-size: 68px;  
+    font-size: 55px;
+    font-family: "hind";  
 }
 .hero-section-content h3{
 margin-top: 25px;
-font-size: 48px;
+font-size: 40px;
 color: black;
 }
 
 .hero-section-content p{
-    font-size: 35px;
+    font-size: 25px;
     color: darkslategray;
+    font-weight: 300;
 }
 .hero-section-content hr{
-    width: 615px;
+    width: 725px;
     margin-left: 0px;
 }
 
@@ -106,12 +114,14 @@ color: black;
     border: none;
     outline-style: none;
     padding: 20px 45px;
-    background: rgb(243, 200, 215);
-    border-radius: 15px;
+    background: rgb(250, 233, 221);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     font-size: 20px;
-    color: darkslategray;
+    color: rgb(34, 37, 37);
     cursor: pointer;
-    transition: transform .3s;
+    
 
 }
 
@@ -119,17 +129,265 @@ color: black;
     color: black;
     font-weight: bold;
     font-size: 25;
-    background: rgb(231, 127, 153);
+    background: rgb(239, 212, 203);
 }
 
 /*hero section styling ends*/
+
+
+/*My skills section styling starts*/
+
+.skills-section h1{
+    text-align: center;
+}
+
+.my-skills{
+    display: flex;
+    flex-direction: row; 
+    font-size: 25px;
+    font-family: "hind";
+    text-align: center;
+    list-style-type: none;
+    margin-top: 1%;
+}
+
+.skills-section h1{
+
+    margin-top: 3%;
+}
+
+.my-skills h3{
+    margin-bottom: 5%;
+}
+
+.skills-container-1{
+    width: 33%;
+    padding-left:5% ;
+}
+
+.skills-container-2{
+    width: 33%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skills-container-3{
+    width: 33%;
+    padding-right: 5%;
+}
+
+
+/*My skills section styling ends*/
+
+/*My Tools section styling starts*/
+
+.tools-section h1{
+    text-align: center;
+}
+
+.tools-logo{
+    height: 60px;
+    width: 60px;
+    color: white;
+}
+
+.tools-section h1{
+    margin-top: 3%;
+}
+
+.my-tools{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 3%;
+}
+
+.tool-card{
+    width: 25%;
+    padding-left: 1%;
+
+}
+
+.resume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 3%;
+    
+}
+.resume .btn{
+    border: none;
+    outline-style: none;
+    padding: 20px 45px;
+    background: rgb(250, 233, 221);
+    border-radius: 45px;
+    font-size: 20px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    
+}
+
+.resume .btn:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 25;
+    background: rgb(239, 212, 203);
+}
+/*My tools section styling ends*/
+
+
+/*My Work section styling starts*/
+
+.my-work{
+    padding-top: 30px;
+}
+
+
+.project-list-grid{
+        font-family: "hind";
+        display: grid;
+        font-size: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "save-a-dog-img save-a-dog-content"
+        "abc-content abc-img"
+        "plant-pal-img plant-pal-content";
+    }
+
+
+.my-work h1{
+
+    text-align: center;
+}
+
+
+.project-list-grid h3{
+    font-size: 35px;
+}
+
+.project-list-grid p{
+    font-size: 25px;
+    margin-bottom: 3%;  
+}
+
+.save-a-dog-img{
+grid-area: save-a-dog-img;
+display: flex;
+padding-left: 10%;
+padding-bottom: 1%;
+padding-right: 1%;
+padding-top: 1%;
+}
+
+.save-a-dog-content{
+display: inline-block;
+padding: 15% 10%;
+}
+
+
+.abc-img{
+grid-area: abc-img;
+display: flex;
+padding-left: 10%;
+padding-bottom: 1%;
+padding-right: 1%;
+padding-top: 1%;
+}
+
+.abc-content{
+    display: inline-block;
+    padding: 15% 10%;  
+}
+
+.plant-pal-img{
+    grid-area: plant-pal-img;
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+
+.plant-pal-content{
+    display: inline-block;
+    padding: 15% 10%; 
+}
+
+.save-a-dog-content .btn{
+    border: none;
+    outline-style: none;
+    padding: 20px 45px;
+    background: rgb(250, 233, 221);
+    border-radius: 45px;
+    font-size: 20px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.save-a-dog-content .btn:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 25;
+    background: rgb(239, 212, 203);
+}
+
+.abc-content .btn{
+    border: none;
+    outline-style: none;
+    padding: 20px 45px;
+    background: rgb(250, 233, 221);
+    border-radius: 45px;
+    font-size: 20px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.abc-content .btn:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 25;
+    background: rgb(239, 212, 203);
+}
+
+.plant-pal-content .btn{
+    border: none;
+    outline-style: none;
+    padding: 20px 45px;
+    background: rgb(250, 233, 221);
+    border-radius: 45px;
+    font-size: 20px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.plant-pal-content .btn:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 25;
+    background: rgb(239, 212, 203);
+}
+
+/*My Work section styling ends*/
+
+
+
 
 /*Footer section styling starts*/
 
 .containerGrid {
   display: grid;
-   background-color: black;
+  background-color: black;
   color:white;
+
   font-family: "hind";
   padding-top: 50px;
   font-variant-caps: all-petite-caps;
@@ -144,19 +402,20 @@ color: black;
 }
 
 .containerGrid h1{
-    font-size: 68px;
+    font-size: 45px;
+    text-align: left;
 }
 
 .containerGrid a{
     margin-top: 25px;
     color: white;
     text-decoration: none;
-    }
+}
 
 .copyright {
   grid-area: copyright;
   padding-top: 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight:300;
   text-align: center;
 }
@@ -178,4 +437,6 @@ color: black;
 }
 
 
-/*Footer section styling ends*
+/*Footer section styling ends*/
+
+
