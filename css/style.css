@@ -7,7 +7,8 @@
 
 .html, body{
     margin:0;
-    padding:0}
+    padding:0
+}
 
 
 .body {
@@ -585,8 +586,6 @@ padding-top: 1%;
     width: 100%;
     flex-direction: column;
     position: relative;
-    padding-top: 0%;
-    padding-left: 0%;
     padding-bottom: 5%;
         
 }
@@ -594,7 +593,7 @@ padding-top: 1%;
 .herogrid{ 
     width: 100%;
     padding: 0px;
-    grid-template-columns:  100%;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-template-areas:
         "heroimage"
@@ -603,7 +602,7 @@ padding-top: 1%;
 
 .hero-section-img {
     padding: 1%;
-    margin: 0% 0% 0% 0%
+    margin: 0% 0% 0% 0%;
 }
 
 #herocontent {
