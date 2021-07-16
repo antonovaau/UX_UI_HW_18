@@ -1,53 +1,72 @@
 *{
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Hind_Vadodara', sans-serif;
+    font-weight:  400px;
+   
 }
 
-.body{
+.html, body{margin:0;padding:0}
+
+
+.body {
     background: white;
-    font-weight: 700;
     color: black;
-    font-family: "hind";
-    overflow: hidden;
+    margin: 0
 }
 
-h1{ 
-    margin-block: 25px;
-    font-size: 55px;
-    font-family: "hind";
-    font-variant-caps: all-petite-caps;
-    font-weight: bold;
+.h1 {
+    font-style: normal;
+    font-family: 'Hind_Vadodara', sans-serif;
+    font-weight: 600;
+
+}
+.h3 {
+    font-style: normal;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    margin-bottom: 1%;
+
 }
 
 /* navbar section styling starts*/
 
 .navbar{
-    background-color: white;
     color:black;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 35px;
+    font-size: 20px;
+    font-weight: 600;
     font-family: "hind";
-    font-variant-caps: all-petite-caps;
-    font-weight: bold;
+    width: 100%;
     
 }
-.primary-icon{
-    height: 120px;
-    padding-left: 30%;
-    
+.primary-icon {
+    height: 80px;
+   
+}
 
+.container-icon{
+    margin: 0% 0% 0% 2%;
 }
+
 .nav-list{
+    display: flex;
     list-style-type: none;
-    padding-right: 3%;
+
 }
 
-.nav-list .list-item{
+.nav-list .list-item {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 20px 20px;
 }
 
 .navbar a{
@@ -56,79 +75,158 @@ h1{
 }
 
 .navbar a:hover{
-    color: rgb(206, 166, 152);
+    color: rgb(206, 166, 152);;
+}
+
+.menu{
+    display: none;
+
+}
+.menu-line{
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    margin-bottom: 8px;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width:600px) {
+.navbar {
+    flex-direction: column;
+    position: relative;
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+.navbar .container-icon{
+    width: 100%;
+}
+
+.primary-icon {
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 10px
+
+}
+.nav-list .list-item{
+    display: none;
+    border-top: 1px solid darkgray;
+
+}
+.nav-list {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    
+}
 }
 
 /*navbar section styling ends*/
 
+
 /*hero section styling starts*/
 
-.hero-section{
-    
-    background-color: rgb(236, 236, 236);
-    color:black;
-    display: flex;
-    justify-content: space-between;
+#hero-section{
+    background-position: center;
+    background-color: rgba(233, 232, 232, 0.493);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
-    font-size: 55px;
-    font-family: "hind";
-    font-weight: bold;  
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+  }
+  
+  .herogrid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "heroimage herocontent";
+
+  }
+  
+  
+#herocontent h1{
+    font-style: normal;
+    font-family: 'Hind_Vadodara', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2%;
+
+
+  }
+
+#herocontent p{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+   
+  }
+
+#herocontent h2{
+    font-style: normal;
+    font-family: 'Caveat';
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 5%;
+    margin-bottom: 8%;
 }
 
-.hero-section-img{
+.hero-section-img {
+    padding: 1%;
+    margin: 0% 0% 10% 0%;
+  }
 
-display: flexbox;
-padding:0%;
-margin: 0%;
+ 
+.IAphoto{
+    width:100%;
+}
+  
+  #heroimage {
+    padding: 1;
+    grid-area: heroimage;
+  }
 
-}
-.hero-section-content{
-    width: 75%;
-    display: flexbox;
-    margin: 5%;
-}
+  #herocontent {
+    padding-top: 8%;
+    padding-left: 10%;
+    grid-area: herocontent;
 
+  }
 
-.hero-section-content h1{
-    margin-block: 25px;
-    font-size: 55px;
-    font-family: "hind";  
-}
-.hero-section-content h3{
-margin-top: 25px;
-font-size: 40px;
-color: black;
-}
-
-.hero-section-content p{
-    font-size: 25px;
-    color: darkslategray;
-    font-weight: 300;
-}
-.hero-section-content hr{
-    width: 725px;
-    margin-left: 0px;
-}
-
-.hero-section-content .btn{
+.hero-section-content button{
     border: none;
     outline-style: none;
-    padding: 20px 45px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px 30px;
     background: rgb(250, 233, 221);
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(34, 37, 37);
     cursor: pointer;
-    
-
+     
 }
 
-.hero-section-content .btn:hover{
+.hero-section-content button:hover {
     color: black;
     font-weight: bold;
-    font-size: 25;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
     background: rgb(239, 212, 203);
 }
 
@@ -137,15 +235,11 @@ color: black;
 
 /*My skills section styling starts*/
 
-.skills-section h1{
-    text-align: center;
-}
-
-.my-skills{
+.my-skills {
     display: flex;
     flex-direction: row; 
-    font-size: 25px;
-    font-family: "hind";
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
     text-align: center;
     list-style-type: none;
     margin-top: 1%;
@@ -154,15 +248,25 @@ color: black;
 .skills-section h1{
 
     margin-top: 3%;
+    text-align: center;
+    font-family: 'Hind Vadodara',sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+
 }
 
 .my-skills h3{
     margin-bottom: 5%;
+    font-size: 24px;
 }
 
 .skills-container-1{
     width: 33%;
     padding-left:5% ;
+}
+.my-skills li{
+    padding: 1%;
 }
 
 .skills-container-2{
@@ -176,13 +280,19 @@ color: black;
     padding-right: 5%;
 }
 
-
 /*My skills section styling ends*/
+
 
 /*My Tools section styling starts*/
 
 .tools-section h1{
+
+    padding-top: 1%;
     text-align: center;
+    font-family: 'Hind Vadodara',sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .tools-logo{
@@ -198,14 +308,14 @@ color: black;
 .my-tools{
     display: flex;
     flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 2%;
 }
 
 .tool-card{
     width: 25%;
-    padding-left: 1%;
+    padding: 3% 3% 3% 3%;
 
 }
 
@@ -214,66 +324,76 @@ color: black;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    margin-bottom: 3%;
-    
+  
 }
+
 .resume .btn{
     border: none;
     outline-style: none;
-    padding: 20px 45px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px 30px;
     background: rgb(250, 233, 221);
     border-radius: 45px;
-    font-size: 20px;
-    color: rgb(34, 37, 37);
-    cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
-    
+    font-size: 18px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
 }
 
 .resume .btn:hover{
     color: black;
     font-weight: bold;
-    font-size: 25;
+    font-size: 20px;
     background: rgb(239, 212, 203);
 }
+
 /*My tools section styling ends*/
 
 
 /*My Work section styling starts*/
 
-.my-work{
-    padding-top: 30px;
-}
-
-
 .project-list-grid{
-        font-family: "hind";
-        display: grid;
-        font-size: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
+    font-family: "hind";
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
         "save-a-dog-img save-a-dog-content"
         "abc-content abc-img"
         "plant-pal-img plant-pal-content";
     }
 
+.project-list-grid h3 {
+    font-style: normal;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 1%;
+  
+}
+
+.project-list-grid p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    margin-bottom: 4%;
+
+}
 
 .my-work h1{
-
     text-align: center;
+    font-family: 'Hind Vadodara',sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 3%;
+ 
 }
 
-
-.project-list-grid h3{
-    font-size: 35px;
-}
-
-.project-list-grid p{
-    font-size: 25px;
-    margin-bottom: 3%;  
-}
 
 .save-a-dog-img{
 grid-area: save-a-dog-img;
@@ -285,23 +405,22 @@ padding-top: 1%;
 }
 
 .save-a-dog-content{
-display: inline-block;
-padding: 15% 10%;
+    padding: 5% 5%; 
 }
 
 
 .abc-img{
-grid-area: abc-img;
-display: flex;
-padding-left: 10%;
-padding-bottom: 1%;
-padding-right: 1%;
-padding-top: 1%;
+    grid-area: abc-img;
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
 }
 
 .abc-content{
-    display: inline-block;
-    padding: 15% 10%;  
+    padding: 10% 5%; 
+    
 }
 
 .plant-pal-img{
@@ -314,95 +433,95 @@ padding-top: 1%;
 }
 
 .plant-pal-content{
-    display: inline-block;
-    padding: 15% 10%; 
+    padding: 1% 5%; 
 }
 
 .save-a-dog-content .btn{
     border: none;
     outline-style: none;
-    padding: 20px 45px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px 30px;
     background: rgb(250, 233, 221);
     border-radius: 45px;
-    font-size: 20px;
-    color: rgb(34, 37, 37);
-    cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
+    font-size: 18px;
+    color: rgb(34, 37, 37);
+    cursor: pointer;
 }
 
 .save-a-dog-content .btn:hover{
     color: black;
     font-weight: bold;
-    font-size: 25;
+    font-size: 20px;
     background: rgb(239, 212, 203);
 }
 
 .abc-content .btn{
     border: none;
     outline-style: none;
-    padding: 20px 45px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px 30px;
     background: rgb(250, 233, 221);
     border-radius: 45px;
-    font-size: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
     color: rgb(34, 37, 37);
     cursor: pointer;
-    transition: transform .3s;
 }
 
 .abc-content .btn:hover{
     color: black;
     font-weight: bold;
-    font-size: 25;
+    font-size: 20px;
     background: rgb(239, 212, 203);
 }
 
 .plant-pal-content .btn{
     border: none;
     outline-style: none;
-    padding: 20px 45px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px 30px;
     background: rgb(250, 233, 221);
     border-radius: 45px;
-    font-size: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
     color: rgb(34, 37, 37);
     cursor: pointer;
-    transition: transform .3s;
 }
 
 .plant-pal-content .btn:hover{
     color: black;
     font-weight: bold;
-    font-size: 25;
+    font-size: 20px;
     background: rgb(239, 212, 203);
 }
 
 /*My Work section styling ends*/
 
 
-
-
 /*Footer section styling starts*/
 
 .containerGrid {
-  display: grid;
-  background-color: black;
-  color:white;
-
-  font-family: "hind";
-  padding-top: 50px;
-  font-variant-caps: all-petite-caps;
-  font-weight: bold;
-  font-size: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.1fr;
-  grid-template-areas: 
-    "spacerA leftSidebar rightContent spacerB"
-    "copyright copyright copyright copyright"
-    ;
+    display: grid;
+    background-color: black;
+    color:white;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: 
+        "spacerA leftSidebar rightContent spacerB"
+        "copyright copyright copyright copyright";
 }
 
 .containerGrid h1{
-    font-size: 45px;
+    font-style: normal;
+    font-family: 'Hind_Vadodara', sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-size: 30px;
+    font-weight: 600;
     text-align: left;
 }
 
@@ -412,27 +531,42 @@ padding-top: 1%;
     text-decoration: none;
 }
 
+.leftSidebar a{
+    font-style: normal;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.leftSidebar p{
+    font-style: normal;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .copyright {
-  grid-area: copyright;
-  padding-top: 30px;
-  font-size: 20px;
-  font-weight:300;
-  text-align: center;
+    grid-area: copyright;
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight:300;
+    text-align: center;
+    padding-bottom: 1%;
 }
 
 .leftSidebar {
-  grid-area: leftSidebar;
+    grid-area: leftSidebar;
 }
 
 
 .rightContent {
-  grid-area: rightContent;
+    grid-area: rightContent;
 }
 
 
 .social-icons{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     color: white;
 }
 
@@ -440,3 +574,129 @@ padding-top: 1%;
 /*Footer section styling ends*/
 
 
+
+@media only screen and (max-width:600px){
+
+#hero-section{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 5%;
+        
+}
+      
+.herogrid{ 
+    width: 100%;
+    padding: 0px;
+    grid-template-columns:  100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "heroimage"
+        "herocontent";
+}
+
+.hero-section-img {
+    padding: 1%;
+    margin: 0% 0% 0% 0%
+}
+
+#herocontent {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    grid-area: herocontent;
+}
+
+.my-skills {
+    flex-direction: column;
+    justify-content: center;
+
+}
+.skills-container-1 {
+    width: 100%;
+    padding: 3%;
+}
+.skills-container-2 {
+    width: 100%;
+    padding: 3%;
+}
+.skills-container-3 {
+    width: 100%;
+    padding: 3%;
+}
+
+.my-tools{
+    display: none;
+}
+
+.tools-section h1{
+    display: none;
+}
+
+.resume{
+     padding:10%;
+}
+    
+.project-list-grid{
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 10%;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+        "save-a-dog-img" 
+        "save-a-dog-content"
+        "abc-img"
+        "abc-content" 
+        "plant-pal-img"
+        "plant-pal-content";
+}
+.plant-pal-img{
+    grid-area: plant-pal-img;
+    display: flex;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    padding-top: 3%;
+}
+    
+.save-a-dog-img {
+    grid-area: save-a-dog-img;
+    display: flex;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    padding-top: 3%;
+}
+    
+.abc-img {
+    grid-area: abc-img;
+    display: flex;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    padding-top: 3%;
+
+}
+
+.containerGrid {
+    flex-direction: column;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "leftSidebar"
+        "rightContent"
+        "copyright";
+}
+
+.containerGrid h1{
+    text-align: center;
+}
