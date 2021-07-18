@@ -13,6 +13,7 @@
     font-style: normal;
     font-family: 'Hind_Vadodara', sans-serif;
     font-weight: 600;
+    margin: 3%;
 
 }
 .h3 {
@@ -145,6 +146,7 @@
   .herogrid {
     display: grid;
     width: 100%;
+    width: 100%;
     overflow: auto;
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -196,8 +198,9 @@
   }
 
   #herocontent {
-    padding-top: 8%;
-    padding-left: 10%;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 10%;
     grid-area: herocontent;
 
   }
@@ -242,7 +245,7 @@
 
 .skills-section h1 {
 
-    margin-top: 3%;
+    margin-top: 10%;
     text-align: center;
     font-family: 'Hind Vadodara',sans-serif;
     font-style: normal;
@@ -253,6 +256,7 @@
 
 .my-skills h3{
     margin-bottom: 5%;
+    margin-top: 3%;
     font-size: 24px;
 }
 
@@ -380,13 +384,13 @@
 }
 
 .my-work h1{
+    margin-top: 10%;
     text-align: center;
     font-family: 'Hind Vadodara',sans-serif;
     font-style: normal;
     font-size: 30px;
     font-weight: 600;
-    padding-top: 3%;
- 
+
 }
 
 
@@ -606,9 +610,9 @@ padding-top: 1%;
 
 #herocontent {
     padding-top: 3%;
-    padding-left: 2%;
+    padding-left: 5%;
     padding-right: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 10%;
     grid-area: herocontent;
 }
 
@@ -619,14 +623,17 @@ padding-top: 1%;
 }
 .skills-container-1 {
     width: 100%;
+    padding: 0% 3% 0% 3%;
 
 }
 .skills-container-2 {
     width: 100%;
+    padding: 0% 3% 0% 3%;
 
 }
 .skills-container-3 {
     width: 100%;
+    padding: 0% 3% 0% 3%;
 
 }
 
@@ -647,6 +654,7 @@ padding-top: 1%;
     justify-content:center;
     margin-bottom: 10%;
     width: 100%;
+    height: 100%;
     position: relative;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto auto;
@@ -660,32 +668,35 @@ padding-top: 1%;
 }
 .plant-pal-img{
     grid-area: plant-pal-img;
-    display: flex;
+    display: flex;  
+   padding: 10% 3% 5% 3%;
+}
+    
+    
+.plant-pal-content {
+padding: 5% 5%;
   
-    padding-bottom: 5%;
-
-    padding-top: 3%;
 }
     
 .save-a-dog-img {
     grid-area: save-a-dog-img;
     display: flex;
- 
-    padding-bottom: 5%;
-
-    padding-top: 3%;
+    padding: 10% 3% 5% 3%;
 }
-    
+
+.save-a-dog-content {
+    padding: 5% 5%;
+}
+
 .abc-img {
     grid-area: abc-img;
     display: flex;
-
-    padding-bottom: 5%;
-   
-    padding-top: 3%;
+    padding: 10% 3% 5% 3%;
 
 }
-
+.abc-content {
+    padding: 5% 5%;
+}
 .containerGrid {
     flex-direction: column;
     text-align: center;
